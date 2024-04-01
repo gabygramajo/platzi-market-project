@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
-    // native query
-    //@Query(value = "SELECT * FROM productos WHERE id_categoria = ?", nativeQuery = true)
     List<Producto> findByIdCategoria(int idCategoria);
 
     List<Producto> findByIdCategoriaOrderByNombreASC(int idCategoria);
