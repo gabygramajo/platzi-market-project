@@ -7,6 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
+// como extiende de CrudRepository el cual es un componente de Spring de tipo @NoRepositoryBean, ProductoCrudRepository se convierte en un componente de Spring y se puede inyectar.
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
     List<Producto> findByIdCategoria(int idCategoria);
 
