@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 // @RestController -> indica que será un controlador de una apirest
 // @RequestMapping -> indica en qué ruta se realizará las peticiones, en este caso "/products"
