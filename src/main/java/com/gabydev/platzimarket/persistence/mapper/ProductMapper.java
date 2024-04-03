@@ -11,7 +11,7 @@ import java.util.List;
 // con componentModel = "spring" indicamos que es un componente de Spring y por lo tanto podemos inyectarlo
 // con uses = {CategoryMapper.class} indicamos que cuando mapee el @Mapping(source = "categoria", target = "category") que ya tiene su propio Mapping
 @Mapper(componentModel = "spring", uses = {CategoryMapper.class})
-public interface ProductoMapper {
+public interface ProductMapper {
     @Mappings({
             @Mapping(source = "idProducto", target = "productId"),
             @Mapping(source = "nombre", target = "name"),

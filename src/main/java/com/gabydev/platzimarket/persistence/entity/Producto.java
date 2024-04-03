@@ -19,7 +19,7 @@ public class Producto {
     @Column(name = "codigo_barras")
     private String codigoBarras;
 
-    @Column(name = "precio_ventas")
+    @Column(name = "precio_venta")
     private Double precioVenta;
 
     @Column(name = "cantidad_stock")
@@ -28,7 +28,7 @@ public class Producto {
     private Boolean estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_categorias", insertable = false, updatable = false)
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
     // insertable = false, updatable = false significa que, a través de esta relación, no vamos a borrar, ni actualizar o insertar ninguna categoría
 

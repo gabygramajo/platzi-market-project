@@ -4,7 +4,7 @@ import com.gabydev.platzimarket.domain.Product;
 import com.gabydev.platzimarket.domain.repository.ProductRepository;
 import com.gabydev.platzimarket.persistence.crud.ProductoCrudRepository;
 import com.gabydev.platzimarket.persistence.entity.Producto;
-import com.gabydev.platzimarket.persistence.mapper.ProductoMapper;
+import com.gabydev.platzimarket.persistence.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -21,7 +21,7 @@ public class ProductoRepository implements ProductRepository {
 
     // Para poder hacer la conversiones
     @Autowired
-    private ProductoMapper mapper;
+    private ProductMapper mapper;
 
     @Override
     public List<Product> getAll() {
