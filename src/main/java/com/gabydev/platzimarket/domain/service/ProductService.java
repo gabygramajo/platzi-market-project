@@ -31,6 +31,7 @@ public class ProductService {
     public Product save(Product product) {
         return productRepository.save(product);
     }
+
     public boolean delete(int productId) {
         //como getProduct utiliza Optional, podemos hacer uso de el método isPresent()
         if(getProduct(productId).isPresent()) {
