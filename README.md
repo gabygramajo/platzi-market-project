@@ -5,7 +5,6 @@ Este es un proyecto de una API el cual se encargará de gestionar las operacione
 ### Tecnologías usadas
 - Spring Boot
 - Spring Data JPA
-- Spring Security
 - PostgreSQL
 - Maven
 
